@@ -77,7 +77,7 @@ public class Macierz {
         return a;
     }
 
-    static int[] plansza(int a, int b, int c) {
+    static int[] klocplansza(int a, int b, int c) {
         int[] tab = {a, b, c};
         return tab;
     }

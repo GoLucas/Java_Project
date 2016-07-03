@@ -39,7 +39,7 @@ public class TestJUnit {
 
     @Test
     public void Test5() {
-        int[] a = Macierz.plansza(1, 2, 10);
+        int[] a = Macierz.klocplansza(1, 2, 10);
         int[] tab = {1, 2, 10};
         assertArrayEquals(tab, a);
         System.out.println("Test 5 zakonczony powidzeniem");
