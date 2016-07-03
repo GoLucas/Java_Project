@@ -49,17 +49,7 @@ public class Macierz {
      * GETTERY I SETTERY
      ***************************************************************************************/
 
-    public static int getWysokosc() {
-        return wysokosc;
-    }
 
-    public static int getSzerokosc() {
-        return szerokosc;
-    }
-
-    static int summac(int a, int b) {
-        return a + b;
-    }
 
     static boolean sprawdzmacierz() {
         return true;
@@ -80,6 +70,18 @@ public class Macierz {
     static int[] klocplansza(int a, int b, int c) {
         int[] tab = {a, b, c};
         return tab;
+    }
+
+    public static int getWysokosc() {
+        return wysokosc;
+    }
+
+    static int summac(int a, int b) {
+        return a + b;
+    }
+
+    public static int getSzerokosc() {
+        return szerokosc;
     }
 
     public void obrysujMacierz()                                                                           //wypelnia wszytkie elementy zerami i obrysuwuje po bokach i od dołu , wstawia tam poprostu jedynki
