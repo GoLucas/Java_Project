@@ -57,6 +57,31 @@ public class Macierz {
         return szerokosc;
     }
 
+    static int summac(int a, int b) {
+        return a + b;
+    }
+
+    static boolean sprawdzmacierz() {
+        return true;
+    }
+
+    static boolean koniecmac(int a) {
+        if (a >= 0) {
+            return true;
+        }
+        return false;
+    }
+
+    static double wartkloc(double a) {
+        a += 100;
+        return a;
+    }
+
+    static int[] plansza(int a, int b, int c) {
+        int[] tab = {a, b, c};
+        return tab;
+    }
+
     public void obrysujMacierz()                                                                           //wypelnia wszytkie elementy zerami i obrysuwuje po bokach i od dołu , wstawia tam poprostu jedynki
     {
         for (int i = 0; i < wysokosc; i++) {
@@ -122,7 +147,6 @@ public class Macierz {
 
 
     }
-
 
     public void pokazMacierzNaEkranie() {
         panel.repaint();
