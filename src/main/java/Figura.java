@@ -49,6 +49,7 @@ abstract public class Figura {
         return najbardziej_wysunieta_wspolrzedna;
     }
 
+
     public int zwrocWspolrzednaKolumnowaNajbardziejWysunietegoKwadracikaZLewejStrony() {
         int najbardziej_wysunieta_wspolrzedna = wspolrzedne[4][0];
 

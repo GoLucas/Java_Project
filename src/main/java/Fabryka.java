@@ -3,7 +3,7 @@ import java.util.Random;
 /**
  * Created by KAMIL BIELSKI on 2016-06-16.
  */
-
+//wzozrec fabryka
 public class Fabryka {
     static Random generator = new Random();
     static int i;
