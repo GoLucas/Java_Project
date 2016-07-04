@@ -3,7 +3,7 @@ import java.util.ArrayList;
 /**
  * Created by KAMIL BIELSKI on 2016-05-08.
  */
-
+//klasa główna
 public class MacierzTest {
     static int szybkosc_ruchu_kwadracika = 50;
     static int wsp_y_zapelnionego_poziomu = -1;
