@@ -1,5 +1,3 @@
-import java.awt.*;
-
 public class Kwadrat extends Figura {
     Kwadrat(int kkolor) {
         Kolor = kkolor;
@@ -23,54 +21,49 @@ public class Kwadrat extends Figura {
         wspolrzedne[10][0] = 10;        wspolrzedne[10][1] =2;      wspolrzedne[10][2] = 2;  //kwadracik0 CZYSTY
         wspolrzedne[11][0] = 11;        wspolrzedne[11][1] =2;      wspolrzedne[11][2] = 3;  //kwadracik0 CZYSTY*/
 
-        int x_startowe=8;
-        int x_tmp=8,y_tmp=0;
+        int x_startowe = 8;
+        int x_tmp = 8, y_tmp = 0;
 
-        for(int ktory_kwadrat=0;ktory_kwadrat<wspolrzedne.length;ktory_kwadrat++)                                       //tu wypelniam wszystkie kolorem tla
+        for (int ktory_kwadrat = 0; ktory_kwadrat < wspolrzedne.length; ktory_kwadrat++)                                       //tu wypelniam wszystkie kolorem tla
         {
 
-            if(ktory_kwadrat%5==0)
-            {
-                x_tmp=x_startowe;
+            if (ktory_kwadrat % 5 == 0) {
+                x_tmp = x_startowe;
                 y_tmp++;                            //uzupelniam nastepna kolumne
             }
-            wspolrzedne[ktory_kwadrat][0]=x_tmp;
-            wspolrzedne[ktory_kwadrat][1]=y_tmp;
-            wspolrzedne[ktory_kwadrat][2]=3;
+            wspolrzedne[ktory_kwadrat][0] = x_tmp;
+            wspolrzedne[ktory_kwadrat][1] = y_tmp;
+            wspolrzedne[ktory_kwadrat][2] = 3;
             x_tmp++;
 
         }
 
-        wspolrzedne[11][2]=Kolor;   //wypelniam figure kolorem zoltym
-        wspolrzedne[12][2]=Kolor;
-        wspolrzedne[16][2]=Kolor;
-        wspolrzedne[17][2]=Kolor;
+        wspolrzedne[11][2] = Kolor;   //wypelniam figure kolorem zoltym
+        wspolrzedne[12][2] = Kolor;
+        wspolrzedne[16][2] = Kolor;
+        wspolrzedne[17][2] = Kolor;
 
 
     }
 
 
-
-    public void ruch()
-    {
-        ostatni_ruch=3;
-        for(int i=0;i<wspolrzedne.length;i++)
-        {
+    public void ruch() {
+        ostatni_ruch = 3;
+        for (int i = 0; i < wspolrzedne.length; i++) {
             wspolrzedne[i][1]++;          //przesun na dol
         }
 
-        kwadraciki_do_zamazania[0]=11;
-        kwadraciki_do_zamazania[1]=12;
-        kwadraciki_do_zamazania[2]=16;
-        kwadraciki_do_zamazania[3]=17;
+        kwadraciki_do_zamazania[0] = 11;
+        kwadraciki_do_zamazania[1] = 12;
+        kwadraciki_do_zamazania[2] = 16;
+        kwadraciki_do_zamazania[3] = 17;
 
-        for(int i=0;i<wspolrzedne.length;i++)
-        {
+        for (int i = 0; i < wspolrzedne.length; i++) {
             //if(i!=7&&i!=12&&i!=17&&i!=16)
-            wspolrzedne[i][2]=3;          //wypelnij wszystkie kolorem bialym
+            wspolrzedne[i][2] = 3;          //wypelnij wszystkie kolorem bialym
         }
 
-        zamaz(kwadraciki_do_zamazania,2);        //tu wpisuje figure , niby funkcja zamaz ale tak naprawde rysuje , tez mozna jej tak uzyc
+        zamaz(kwadraciki_do_zamazania, 2);        //tu wpisuje figure , niby funkcja zamaz ale tak naprawde rysuje , tez mozna jej tak uzyc
 
     }
 
