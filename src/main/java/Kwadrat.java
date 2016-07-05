@@ -5,7 +5,7 @@ public class Kwadrat extends Figura {
         kwadraciki_do_zamazania = new int[4];
 
 
-
+//komentarz
         /*         NR  X                                Y                         KOLOR   */                           //startowe wspolrzedne obiektu na maciery glownej
 
         /*wspolrzedne[0][0] = 8;          wspolrzedne[0][1] = 0;       wspolrzedne[0][2] = 3;  //kwadracik0 CZYSTY
